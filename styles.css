@@ -1,0 +1,271 @@
+/* Estilos General */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #2C2C2C;
+  }
+  
+  /* Header */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #6A8DA3;
+  }
+
+  
+  img {
+    width: 100px;
+    height: auto;
+  }
+
+  img.logo-header {
+    width: 25px;
+    height: auto;
+}
+
+
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #F4F4F4;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+  
+  nav a:hover {
+    color: #2C2C2C;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+  
+    nav {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+  }
+
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    height: 50vh;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(106, 141, 163, 0.7);
+    background-blend-mode: multiply;
+    color: #F4F4F4;
+  }
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text h2 {
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #fdfbfb;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/** Wrap Title **/
+
+.wrap-title-section{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
+  }
+
+
+/** Servicios Section **/
+
+.wrap-servicios-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .item-servicios-section{
+    padding: 1rem;
+  }
+  
+  .item-servicios-section img{
+    width: 300px;
+    height: 225px;
+  }
+
+  /** Two Columns Section **/
+
+.wrap-two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .wrap-img_two-column{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  .wrap-text-column h3{
+    padding: 2rem 0;
+  }
+  
+  .wrap-text-column p{
+    padding-bottom: 1rem;
+  }
+
+
+ /** features Section **/
+
+ .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.features-logo {
+    width: 15%;
+}
+
+.features-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.features-text {
+    width: 80%;
+}
+
+.features-text h4 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.features-text ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-text li {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.features-text li span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.features-text li p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #6A8DA3;
+    padding: 2rem;
+    color: #F4F4F4;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer a {
+    color: #F4F4F4;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #2C2C2C;
+  }
+  
+  .redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .redes-sociales a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    color: #6A8DA3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .redes-sociales a:hover {
+    background-color: #2C2C2C;
+    color: #F4F4F4;
+  }
